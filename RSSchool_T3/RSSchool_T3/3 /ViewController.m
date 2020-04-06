@@ -8,7 +8,7 @@ int const LABEL_VIEW_Y = 90;
 int const VIEW_X = 140;
 
 
-@interface ViewController ()
+@interface ViewController () <UITextFieldDelegate>
 @property (nonatomic, strong) UILabel *labelResultColor;
 @property (nonatomic, strong) UILabel *labelRed;
 @property (nonatomic, strong) UILabel *labelGreen;
