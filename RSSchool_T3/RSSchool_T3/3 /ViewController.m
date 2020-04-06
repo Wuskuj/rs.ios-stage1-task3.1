@@ -84,8 +84,8 @@ int const VIEW_X = 140;
 -(void)setupButton {
     self.buttonProcess = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width / 2 - 35, LABEL_VIEW_Y + 250, 70, 40)];
     [self.buttonProcess setTitle:@"Process" forState:UIControlStateNormal];
-    [self.buttonProcess setTitleColor:UIColor.systemBlueColor forState:UIControlStateNormal];
-    [self.buttonProcess setTitleColor:UIColor.grayColor forState:UIControlStateHighlighted];
+    [self.buttonProcess setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+    [self.buttonProcess setTitleColor:[UIColor grayColor] forState:UIControlStateHighlighted];
     [self.buttonProcess addTarget:self action:@selector(didTap) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.buttonProcess];
 }
@@ -182,6 +182,4 @@ int const VIEW_X = 140;
     
     self.buttonProcess.accessibilityIdentifier = @"buttonProcess";
 }
-
-
 @end
